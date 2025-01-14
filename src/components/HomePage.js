@@ -31,6 +31,16 @@ const HomePage = () => {
           />
         </section>
 
+        <div className="bg-black bg-opacity-50 text-white p-3 rounded-md shadow-md">
+            <h2 className="text-xl font-bold mb-2">Investor Information</h2>
+            <p className=" mb-2">
+              Visit our investor website for details related to listing on CSE.
+            </p>
+            <button className="bg-yellow-500 text-black px-6 py-2 rounded-md hover:bg-yellow-600 hover:text-white">
+              View Details
+            </button>
+          </div>
+
       </div>
     </div>
   );
