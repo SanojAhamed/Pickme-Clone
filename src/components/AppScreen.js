@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import screen1 from "../assets/how-it-works-1.png";
 import screen2 from "../assets/how-it-works-2.png";
 import screen3 from "../assets/how-it-works-3.png";
+import googlePlay from "../assets/icon-app-download-android.png";
+import appStore from "../assets/icon-app-download-apple.png";
+import appGallery from "../assets/icon-app-download-huawei.png";
 
 const AppScreen = () => {
   const [activeScreen, setActiveScreen] = useState(1);
@@ -53,6 +56,21 @@ const AppScreen = () => {
             </button>
             <p className="mt-2 font-semibold">Track Your Driver</p>
             <p className="text-sm">Know your driver’s location and estimated time of arrival in real-time.</p>
+          </div>
+        </div>
+
+        <div className="w-full ml-2">
+          <h2 className="text-lg font-bold mb-4">Download Our App Now!</h2>
+          <div className="flex space-x-4">
+            <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+              <img src={googlePlay} alt="Google Play" className="h-10" />
+            </a>
+            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+              <img src={appStore} alt="App Store" className="h-10" />
+            </a>
+            <a href="https://appgallery.huawei.com" target="_blank" rel="noopener noreferrer">
+              <img src={appGallery} alt="App Gallery" className="h-10" />
+            </a>
           </div>
         </div>
       </div>
