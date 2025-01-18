@@ -36,8 +36,8 @@ const AppScreen = () => {
             >
               1
             </button>
-            <p className="mt-2 font-semibold">Book in Just 2 Taps</p>
-            <p className="text-sm">Key in your pick-up and drop-off locations to get your estimated fare.</p>
+            <p className="mt-2 font-semibold text-white">Book in Just 2 Taps</p>
+            <p className="text-sm text-white">Key in your pick-up and drop-off locations to get your estimated fare.</p>
           </div>
 
           <div onMouseEnter={() => setActiveScreen(2)} className="flex flex-col items-center cursor-pointer">
@@ -48,8 +48,8 @@ const AppScreen = () => {
             >
               2
             </button>
-            <p className="mt-2 font-semibold">Get a Driver</p>
-            <p className="text-sm">PickMe will find you the nearest available driver.</p>
+            <p className="mt-2 font-semibold text-white">Get a Driver</p>
+            <p className="text-sm text-white">PickMe will find you the nearest available driver.</p>
           </div>
 
           <div onMouseEnter={() => setActiveScreen(3)} className="flex flex-col items-center cursor-pointer">
@@ -60,13 +60,13 @@ const AppScreen = () => {
             >
               3
             </button>
-            <p className="mt-2 font-semibold">Track Your Driver</p>
-            <p className="text-sm">Know your driver’s location and estimated time of arrival in real-time.</p>
+            <p className="mt-2 font-semibold text-white">Track Your Driver</p>
+            <p className="text-sm text-white">Know your driver’s location and estimated time of arrival in real-time.</p>
           </div>
         </div>
 
         <div className="w-full ml-2">
-          <h2 className="text-lg font-bold mb-4">Download Our App Now!</h2>
+          <h2 className="text-lg font-bold mb-4 ">Download Our App Now!</h2>
           <div className="flex space-x-4">
             <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
               <img src={googlePlay} alt="Google Play" className="h-10" />
