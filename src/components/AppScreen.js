@@ -5,12 +5,18 @@ import screen3 from "../assets/how-it-works-3.png";
 import googlePlay from "../assets/icon-app-download-android.png";
 import appStore from "../assets/icon-app-download-apple.png";
 import appGallery from "../assets/icon-app-download-huawei.png";
+import bgHowItWorks from "../assets/bg-how-it-works.jpg"; // Import the background image
 
 const AppScreen = () => {
   const [activeScreen, setActiveScreen] = useState(1);
 
   return (
-    <div className="bg-gray-200 min-h-screen flex justify-center">
+    <div
+      className="min-h-screen flex justify-center items-center bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${bgHowItWorks})`,
+      }}
+    >
       <div className="max-w-6xl w-full grid grid-cols-2 gap-8">
         <div className="flex justify-center items-center">
           <img
@@ -19,7 +25,7 @@ const AppScreen = () => {
             className="max-w-[250px] w-full h-auto"
           />
         </div>
-        <div className="flex flex-col justify-center space-y-6">
+        <div className="flex flex-col justify-center space-y-6 mt-4">
           <h1 className="text-4xl font-bold text-center">The PickMe App and how it works</h1>
 
           <div onMouseEnter={() => setActiveScreen(1)} className="flex flex-col items-center cursor-pointer">
