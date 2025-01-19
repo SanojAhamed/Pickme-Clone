@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import AppScreen from './components/AppScreen';
+import OptionsPage from './components/OptionsPage';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <HomePage />
       <AppScreen /> 
+      <OptionsPage />
     </div>
   );
 }
