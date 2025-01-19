@@ -66,16 +66,16 @@ const AppScreen = () => {
         </div>
 
         <div className="w-full ml-2 mb-4">
-          <h2 className="text-lg font-bold mb-4 ">Download Our App Now!</h2>
+          <h2 className="text-lg font-bold mb-2 ">Download Our App Now!</h2>
           <div className="flex space-x-4">
             <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
-              <img src={googlePlay} alt="Google Play" className="h-10" />
+              <img src={googlePlay} alt="Google Play" className="h-8" />
             </a>
             <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
-              <img src={appStore} alt="App Store" className="h-10" />
+              <img src={appStore} alt="App Store" className="h-8" />
             </a>
             <a href="https://appgallery.huawei.com" target="_blank" rel="noopener noreferrer">
-              <img src={appGallery} alt="App Gallery" className="h-10" />
+              <img src={appGallery} alt="App Gallery" className="h-8" />
             </a>
           </div>
         </div>
