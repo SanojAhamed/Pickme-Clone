@@ -68,7 +68,7 @@ const OptionsPage = () => {
     <div className="min-h-screen flex flex-col items-center bg-white py-10 relative">
       <h1 className="text-4xl font-bold mb-8">Know Your Options</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-10">
+      <div className="flex flex-wrap justify-center gap-8 mb-10">
         {options.map((option, index) => (
           <div
             key={index}
