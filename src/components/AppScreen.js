@@ -65,7 +65,7 @@ const AppScreen = () => {
           </div>
         </div>
 
-        <div className="w-full ml-2">
+        <div className="w-full ml-2 mb-4">
           <h2 className="text-lg font-bold mb-4 ">Download Our App Now!</h2>
           <div className="flex space-x-4">
             <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
