@@ -20,7 +20,7 @@ const AppScreen = () => {
       <div className="max-w-6xl w-full grid grid-cols-2 gap-8">
         <div className="flex justify-center items-center">
           <img
-            src={activeScreen == 1 ? screen1 : activeScreen == 2 ? screen2 : screen3}
+            src={activeScreen === 1 ? screen1 : activeScreen === 2 ? screen2 : screen3}
             alt="Screen"
             className="max-w-[250px] w-full h-auto"
           />
@@ -31,7 +31,7 @@ const AppScreen = () => {
           <div onMouseEnter={() => setActiveScreen(1)} className="flex flex-col items-center cursor-pointer">
             <button
               className={`rounded-full w-16 h-16 flex items-center justify-center text-xl font-bold ${
-                activeScreen == 1 ? "bg-customYellow text-white" : "bg-gray-300 text-black"
+                activeScreen === 1 ? "bg-customYellow text-white" : "bg-gray-300 text-black"
               }`}
             >
               1
@@ -43,7 +43,7 @@ const AppScreen = () => {
           <div onMouseEnter={() => setActiveScreen(2)} className="flex flex-col items-center cursor-pointer">
             <button
               className={`rounded-full w-16 h-16 flex items-center justify-center text-xl font-bold ${
-                activeScreen == 2 ? "bg-customYellow text-white" : "bg-gray-300 text-black"
+                activeScreen === 2 ? "bg-customYellow text-white" : "bg-gray-300 text-black"
               }`}
             >
               2
@@ -55,7 +55,7 @@ const AppScreen = () => {
           <div onMouseEnter={() => setActiveScreen(3)} className="flex flex-col items-center cursor-pointer">
             <button
               className={`rounded-full w-16 h-16 flex items-center justify-center text-xl font-bold ${
-                activeScreen == 3 ? "bg-customYellow text-white" : "bg-gray-300 text-black"
+                activeScreen === 3 ? "bg-customYellow text-white" : "bg-gray-300 text-black"
               }`}
             >
               3

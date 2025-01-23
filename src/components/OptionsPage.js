@@ -73,7 +73,7 @@ const OptionsPage = () => {
           <div
             key={index}
             className={`flex flex-col items-center cursor-pointer ${
-              selectedOptionIndex == index ? "" : "text-black"
+              selectedOptionIndex === index ? "" : "text-black"
             }`}
             onClick={() => setSelectedOptionIndex(index)}
           >
