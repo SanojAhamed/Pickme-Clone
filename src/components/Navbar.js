@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.svg";
 
-// Navigation menu 
 const menuItems = [
   "Ride",
   "Drive",
@@ -23,7 +22,6 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md">
-
       <div className="relative">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-6 md:space-x-20">
@@ -37,7 +35,7 @@ const Navbar = () => {
               {menuItems.map((item) => (
                 <a
                   key={item}
-                  href="#"
+                  href={`/${item.toLowerCase().replace(/ /g, "-")}`}
                   className="text-gray-700 hover:text-yellow-500 text-sm font-medium"
                 >
                   {item}
@@ -48,7 +46,7 @@ const Navbar = () => {
 
           <div className="flex items-center space-x-4">
             <a
-              href="#"
+              href="/about"
               className="hidden md:block text-gray-700 hover:text-yellow-500 text-sm font-medium"
             >
               About Us
@@ -75,7 +73,7 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <a
                 key={item}
-                href="#"
+                href={`/${item.toLowerCase().replace(/ /g, "-")}`}
                 className="block text-gray-700 hover:text-yellow-500 text-sm font-medium"
               >
                 {item}
