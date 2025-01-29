@@ -5,13 +5,23 @@ import androidIcon from '../assets/icon-app-download-android.png';
 import appleIcon from '../assets/icon-app-download-apple.png';  
 import huaweiIcon from '../assets/icon-app-download-huawei.png';  
 import qrCode from '../assets/qr-code.png';  
+import bgImage from '../assets/bg-how-it-works.jpg';
 
 const ToogleWeb = () => {
   return (
     <div className="popup-container fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div className="popup-content bg-white p-8 rounded-lg shadow-lg flex w-full h-full md:w-full md:h-full">
        
-        <div className="left-side w-full md:w-1/2 flex flex-col items-center justify-center p-8">
+        <div
+          className="flex flex-col items-center justify-center"
+          style={{
+            // backgroundImage: `url(${bgImage})`, 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center', 
+            height: '100%',  
+            width: '50%'  
+          }}
+        >
           
           <img
             src={logoDropdown}  
