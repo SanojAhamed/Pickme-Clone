@@ -1,9 +1,9 @@
 import React from 'react';
 
 import logoDropdown from '../assets/logo-dropdown.png';  
-// import androidIcon from '../assets/icon-app-download-android.png'; 
-// import appleIcon from '../assets/icon-app-download-apple.png';  
-// import huaweiIcon from '../assets/icon-app-download-huawei.png';  
+import androidIcon from '../assets/icon-app-download-android.png'; 
+import appleIcon from '../assets/icon-app-download-apple.png';  
+import huaweiIcon from '../assets/icon-app-download-huawei.png';  
 import qrCode from '../assets/qr-code.png';  
 
 const ToogleWeb = () => {
