@@ -13,11 +13,12 @@ const menuItems = [
   "Invest",
 ];
 
-const Navbar = () => {
+const Navbar = ({ togglePopup }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
+    togglePopup();
   };
 
   return (
@@ -57,9 +58,7 @@ const Navbar = () => {
               className="h-20 w-20 bg-customYellow text-white flex items-center justify-center hover:bg-orange-600 focus:outline-none"
             >
               <i
-                className={`fas ${
-                  isMenuOpen ? "fa-times" : "fa-bars"
-                } text-2xl`}
+                className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"} text-2l`}
               ></i>
             </button>
           </div>
