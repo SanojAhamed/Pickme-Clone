@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import logoDropdown from '../assets/logo-dropdown.png';  
 import androidIcon from '../assets/icon-app-download-android.png'; 
 import appleIcon from '../assets/icon-app-download-apple.png';  
@@ -8,6 +7,13 @@ import qrCode from '../assets/qr-code.png';
 import bgImage from '../assets/bg-how-it-works.jpg';
 
 const ToogleWeb = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const closePopup = () => {
+    setIsVisible(false); 
+  };
+
+  if (!isVisible) return null;
+
   return (
     <div className="popup-container fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div className="popup-content bg-white p-8 rounded-lg shadow-lg flex w-full h-full md:w-full md:h-full">
@@ -15,14 +21,12 @@ const ToogleWeb = () => {
         <div
           className="flex flex-col items-center justify-center"
           style={{
-            // backgroundImage: `url(${bgImage})`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'center', 
             height: '100%',  
             width: '50%'  
           }}
         >
-          
           <img
             src={logoDropdown}  
             alt="PickMe Logo"
@@ -91,6 +95,12 @@ const ToogleWeb = () => {
             </ul>
           </div>
         </div>
+
+        <button
+          onClick={closePopup}
+          className="absolute top-4 right-4 text-black text-3xl font-bold">
+          &times;
+        </button>
       </div>
     </div>
   );
